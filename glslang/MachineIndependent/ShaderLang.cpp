@@ -1864,7 +1864,7 @@ bool TShader::parse(const TBuiltInResource* builtInResources, int defaultVersion
                     bool forwardCompatible, EShMessages messages, Includer& includer)
 {
     //printf("TShader::parse\n");
-    //SetThreadPoolAllocator(pool);
+    SetThreadPoolAllocator(pool);
 
     if (! preamble)
         preamble = "";
