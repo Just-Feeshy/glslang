@@ -1863,6 +1863,7 @@ void TShader::setFlattenUniformArrays(bool flatten)     { intermediate->setFlatt
 bool TShader::parse(const TBuiltInResource* builtInResources, int defaultVersion, EProfile defaultProfile, bool forceDefaultVersionAndProfile,
                     bool forwardCompatible, EShMessages messages, Includer& includer)
 {
+    printf("TShader::parse\n");
     SetThreadPoolAllocator(pool);
 
     if (! preamble)
